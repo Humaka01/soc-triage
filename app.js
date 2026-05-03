@@ -8,7 +8,7 @@
 const KEYS = { vt: "", abuse: "" };
 
 // ── Cloudflare Worker URL ─────────────────────────────────
-const WORKER = "wild-union-9040.vodislavimad.workers.dev";
+const WORKER = "https://wild-union-9040.vodislavimad.workers.dev";
 
 async function workerFetch(path, headers = {}) {
   const res = await fetch(WORKER + path, {
