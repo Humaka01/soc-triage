@@ -9,7 +9,10 @@ const KEYS = { vt: "", abuse: "" };
 
 // ── Cloudflare Worker URL ─────────────────────────────────
 // Replace this with your actual Worker URL after deploying
-const WORKER = "wild-union-9040.vodislavimad.workers.dev";
+// ── Cloudflare Worker URL ─────────────────────────────────
+// Paste ONLY the worker domain below — no trailing slash
+// Format:  'https://xxxx-xxxx-1234.yourname.workers.dev'
+const WORKER = "https://YOUR-WORKER-SUBDOMAIN.workers.dev";
 
 async function workerFetch(path, headers = {}) {
   const res = await fetch(WORKER + path, {
